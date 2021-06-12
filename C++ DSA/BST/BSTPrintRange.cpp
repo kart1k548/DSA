@@ -85,10 +85,10 @@ void printRange(TreeNode* node,int ll,int hl){
 		printRange(node->right,ll,hl);
 	}
 	else if(node->val > hl){
-		printRange(node->right,ll,hl);
+		printRange(node->left,ll,hl);
 	}
 	else{
-		printRange(node->left,ll,hl);
+		printRange(node->right,ll,hl);
 	}
 }
 int main(){
