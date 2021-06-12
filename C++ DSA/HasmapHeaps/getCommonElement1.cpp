@@ -16,12 +16,12 @@ int main(){
 	}
 	unordered_map<int,int> umap;
 	unordered_map<int,int>:: iterator it;
-	for (int i = 0; i < n2; ++i)
+	for (int i = 0; i < n1; ++i)
 	{
-		umap[v2[i]] = i;
+		umap[v1[i]] = i;
 	}
-	for(int i = 0; i < n1; i++){
-		it = umap.find(v1[i]);
+	for(int i = 0; i < n2; i++){
+		it = umap.find(v2[i]);
 		if(it == umap.end()){
 			continue;
 		}
